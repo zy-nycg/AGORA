@@ -1,0 +1,17 @@
+name: agora_wallet
+description: AGORA 移动端钱包的数据层（只读取数 + 校验；零第三方依赖）
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+# 刻意**没有任何依赖**：
+#   · 少一个包就少一处供应链风险（钱包是最需要少依赖的应用）；
+#   · 只用 dart:io / dart:convert / dart:async，Flutter 移动端与桌面都直接可用。
+# 若你的 App 需要 Web 平台支持，见 README「Web 平台」一节（把 HttpClient 换成 package:http）。
+dependencies:
+  cryptography: ^2.9.0
+  pointycastle: ^4.0.0
+
+dev_dependencies:

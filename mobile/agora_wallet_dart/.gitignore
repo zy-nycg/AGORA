@@ -1,0 +1,6 @@
+# Dart 构建产物
+.dart_tool/
+pubspec.lock
+
+# 例外：示例 App 是应用（不是库），它的锁文件应当入库
+!example/flutter_app/pubspec.lock

@@ -1,0 +1,21 @@
+name: agora_wallet_example
+description: AGORA 钱包 Flutter 示例（演示如何接 `agora_wallet` 数据层）
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # 与本仓库的包同级开发时用 path；放进你自己的仓库后改成你的相对路径
+  agora_wallet:
+    path: ../../
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
